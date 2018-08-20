@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 	http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
-
+<!-- 
 	<servlet>
 		<servlet-name>now</servlet-name>
 		<servlet-class>example.NowServlet</servlet-class>
@@ -14,4 +14,14 @@
 			<servlet-name>now</servlet-name>
 			<url-pattern>/now</url-pattern>
 		</servlet-mapping>
+ -->
+	<servlet>
+		<servlet-name>SimpleController</servlet-name>
+		<servlet-class>mvc.simple.SimpleController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimpleController</servlet-name>
+		<url-pattern>/simple</url-pattern>
+	</servlet-mapping>
+ 
 </web-app>
